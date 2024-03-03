@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email - Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="icons/email .png">
+</head>
+<body>
+    <div class="gmail_page">
+        <nav class="nav">
+            <div class="left">
+                <div class="toggle_bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="gmail_icon">
+                    <img src="icons/email logo.png" alt="gmail-logo">
+                </div>
+            </div>
+            <div class="center">
+                <div class="icon search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="search_bar">
+                    <input type="search" name="search" id="search" placeholder="Search mail">
+                </div>
+                <div class="icon filter">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+            </div>
+            <div class="right">
+                <div class="help icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="settings icon">
+                    <img src="icons/settings.png" alt="settings">
+                </div>
+                <div class="dots-9 icon">
+                    <img src="icons/9-dot.png" alt="settings">
+                </div>
+                <div class="profile icon">
+                    <img src="icons/unnamed.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <aside class="">
+                <div class="compose">
+                    <div class="menu_icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="icon_text">
+                        Compose
+                    </div>
+                </div>
+                <ul class="side_options">
+                    <li class="menu_btn active">
+                        <div class="menu_icon">
+                            <i class="fas fa-inbox"></i>
+                        </div>
+                        <div class="menu_text">
+                            Inbox
+                        </div>
+                    </li>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="menu_text">
+                            Stared
+                        </div>
+                    </li>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="menu_text">
+                            Snoozed
+                        </div>
+                    </li>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="menu_text">
+                            Sent
+                        </div>
+                    </li>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="menu_text">
+                            Drafts
+                        </div>
+                    </li>
+                    <div class="drop-down"  index="0">
+                        <div class="menu_btn drop-down-btn"  index="0"> 
+                            <div class="menu_icon">
+                                <i class="fas fa-chevron-down"></i>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="menu_text">
+                                More
+                            </div>
+                        </div>
+                       <div class="down-options">
+                        <ul class="drop-down-options">
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/important.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    important
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/chat.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    Chats
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/schedule_send_baseline_nv700_20dp.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    Scheduled
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/stacked_email_baseline_nv700_20dp.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    All Mail
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/report_baseline_nv700_20dp.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    Spam
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/delete_baseline_nv700_20dp.png" alt="important">
+                                </div>
+                                <div class="menu_text">
+                                    Trash
+                                </div>
+                            </li>
+                            <div class="drop-down" index="1">
+                                <div class="menu_btn drop-down-btn" index="1">
+                                    <div class="menu_icon">
+                                        <img src="icons/label_baseline_nv700_20dp.png" alt="">
+                                    </div>
+                                    <div class="drop-down-text menu_text">
+                                        Categories
+                                    </div>
+                                </div>
+                                <ul class="drop-down-options">
+                                    <li class="menu_btn">
+                                        <div class="menu_icon">
+                                            <img src="icons/social.png" alt="important">
+                                        </div>
+                                        <div class="menu_text">
+                                            Social
+                                        </div>
+                                    </li>
+                                    <li class="menu_btn">
+                                        <div class="menu_icon">
+                                            <img src="icons/info.png" alt="important">
+                                        </div>
+                                        <div class="menu_text">
+                                            Updates
+                                        </div>
+                                    </li>
+                                    <li class="menu_btn">
+                                        <div class="menu_icon">
+                                            <img src="icons/forums.png" alt="important">
+                                        </div>
+                                        <div class="menu_text">
+                                            Forums
+                                        </div>
+                                    </li>
+                                    <li class="menu_btn">
+                                        <div class="menu_icon">
+                                            <img src="icons/promotions.png" alt="important">
+                                        </div>
+                                        <div class="menu_text">
+                                            Promotions
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                       </div>
+                    </div>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <img src="icons/settings.png" alt="important">
+                        </div>
+                        <div class="menu_text">
+                            Manage Labels
+                        </div>
+                    </li>
+                    <li class="menu_btn">
+                        <div class="menu_icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="menu_text">
+                            Create new label
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <section class="message_container">
+                <header class="message_header">
+                    <div class="left_header">
+                        <div class="head_icon check_box">
+                            <div class="check">
+                                <input type="checkbox" name="select" id="select">
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <div class="options"></div>
+                        </div>
+                        <div class="head_icon reload">
+                           <div class="reload_icon">
+                                <i class="fas fa-redo-alt"></i>
+                           </div>
+                        </div>
+                        <div class="head_icon dot-3">
+                           <div class="dot_icon">
+                                <i class="fas fa-ellipsis-v"></i>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="right_header">
+                        <div class="count_display">
+                            1-50 of 2,748 
+                        </div>
+                        <div class="head_icon previous">
+                            <div class="previous_icon">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                         </div>
+                         <div class="head_icon next">
+                            <div class="next_icon">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                         </div>
+                         <div class="head_icon keyboard">
+                            <div class="keyboard_icon">
+                                <i class="fas fa-keyboard"></i>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                         </div>
+                    </div>
+                </header>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.gmail_page{
+  max-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  padding: 15px 0;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.toggle_bar, .icon{
+  width:  45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #575757;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.toggle_bar:hover{
+  background: #ddd;
+}
+
+.icon:hover{
+  background: #ddd;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search{
+  padding: 10px 50px;
+  height: 45px;
+  width: 500px;
+  min-width: 200px;
+  border-radius: 50px;
+  border: none;
+  background: rgb(216 216 243);
+  outline: none;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+.search, .filter{
+  position: absolute;
+}
+
+.filter{
+  right: 4px;
+}
+
+.profile img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile{
+  padding: 3px;
+}
+
+.main{
+  display: flex;
+  margin-top: 15px;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  max-height: calc(100vh - 90px);
+  overflow-y: scroll;
+  transition: .5s;
+}
+
+.compose {
+  padding: 10px;
+  height: 53px;
+  width: 56px;
+  background: #b3ecf5;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+aside.active .compose{
+  padding: 10px;
+  height: 60px;
+  width: 150px;
+  background: #a5f2ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+.icon_text, .menu_text{
+  margin-left: 15px;
+  color: #3b3b3b;
+  font-family: Open "Sans";
+}
+
+.menu_btn{
+  width: 100%;
+  padding: 7px;
+  display: flex;
+  border-radius: 0 20px 20px 0;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.menu_icon{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.side_options .menu_icon{
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu_btn:hover{
+  background: #e7e7e7;
+}
+
+.side_options{
+  width: 70px;
+}
+
+aside.active .side_options{
+  width: 225px;
+}
+
+.menu_btn.active{
+  background: #cbe0ff;
+  font-weight: bold;
+ 
+}
+
+aside.active .menu_text{
+  font-size: 15px;
+  display: inline-block;
+}
+
+aside.active .icon_text{
+  display: inline-block;
+}
+
+
+.menu_text{
+  font-size: 15px;
+  display: none;
+}
+
+.icon_text{
+  display: none;
+}
+
+.menu_btn.active .menu_text{
+  color: #010158 !important;
+}
+
+.drop-down{
+  position: relative;
+}
+
+.down-options{
+  position: relative;
+}
+
+.drop-down-options{
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.drop-down.active .drop-down-options{
+  position: relative;
+  height: 240px;
+}
+
+.drop-down.category .drop-down-options {
+  position: relative;
+  height: 378px;
+}
+
+.drop-down.active .fas.fa-chevron-down{
+  display: none;
+}
+
+.drop-down .fas.fa-chevron-down{
+  display: inline-block;
+}
+
+.drop-down .fas.fa-chevron-up{
+  display: none;
+}
+
+.drop-down.active .fas.fa-chevron-up{
+  display: inline-block;
+}
+
+/* scroll bar */
+
+/* Styling for the scrollbar track (the part the thumb slides along) */
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+  border-radius: 10px;
+}
+
+/* Styling for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scroll thumb */
+  border-radius: 10px;
+}
+
+/* Change the thumb color when it's hovered over or active */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color when hovered */
+}
+
+/* Styling for the scrollbar itself */
+::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+  height: 5px; /* width of the entire scrollbar */
+}
+
+/* message box container  */
+
+.message_container{
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #3b3b3b21;
+  height: 90vh;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
