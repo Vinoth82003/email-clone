@@ -767,6 +767,7 @@ textarea{
   border: none;
   border-bottom: 1px solid #686868;
   height: 300px;
+  outline: none;
 }
 
 .compose_footer{

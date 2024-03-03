@@ -102,4 +102,8 @@ maximize.addEventListener("click",()=>{
 
 closeBtn.addEventListener("click",()=>{
     compose_message.className = "compose_message";
+});
+
+document.querySelector(".submit_button").addEventListener("click",()=>{
+    compose_message.className = "compose_message";
 })
