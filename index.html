@@ -12,8 +12,9 @@
     <div class="gmail_page">
         <nav class="nav">
             <div class="left">
-                <div class="toggle_bar">
+                <div class="toggle_bar hover icon">
                     <i class="fas fa-bars"></i>
+                    <span class="span_text">Menu</span>
                 </div>
                 <div class="gmail_icon">
                     <img src="icons/email logo.png" alt="gmail-logo">
@@ -31,14 +32,17 @@
                 </div>
             </div>
             <div class="right">
-                <div class="help icon">
+                <div class="help hover icon">
                     <i class="fas fa-question-circle"></i>
+                    <span class="span_text">Help</span>
                 </div>
-                <div class="settings icon">
+                <div class="settings hover icon">
                     <img src="icons/settings.png" alt="settings">
+                    <span class="span_text">Settings</span>
                 </div>
-                <div class="dots-9 icon">
+                <div class="dots-9 hover icon">
                     <img src="icons/9-dot.png" alt="settings">
+                    <span class="span_text">Google apps</span>
                 </div>
                 <div class="profile icon">
                     <img src="icons/unnamed.png" alt="">
@@ -56,7 +60,7 @@
                     </div>
                 </div>
                 <ul class="side_options">
-                    <li class="menu_btn active">
+                    <li class="menu_btn active inbox_btn">
                         <div class="menu_icon">
                             <i class="fas fa-inbox"></i>
                         </div>
@@ -64,7 +68,7 @@
                             Inbox
                         </div>
                     </li>
-                    <li class="menu_btn">
+                    <li class="menu_btn stared">
                         <div class="menu_icon">
                             <i class="far fa-star"></i>
                         </div>
@@ -72,7 +76,7 @@
                             Stared
                         </div>
                     </li>
-                    <li class="menu_btn">
+                    <li class="menu_btn snoozed">
                         <div class="menu_icon">
                             <i class="far fa-clock"></i>
                         </div>
@@ -80,7 +84,7 @@
                             Snoozed
                         </div>
                     </li>
-                    <li class="menu_btn">
+                    <li class="menu_btn send_btn">
                         <div class="menu_icon">
                             <i class="far fa-paper-plane"></i>
                         </div>
@@ -88,7 +92,7 @@
                             Sent
                         </div>
                     </li>
-                    <li class="menu_btn">
+                    <li class="menu_btn draft_btn">
                         <div class="menu_icon">
                             <i class="far fa-file"></i>
                         </div>
@@ -108,7 +112,7 @@
                         </div>
                        <div class="down-options">
                         <ul class="drop-down-options">
-                            <li class="menu_btn">
+                            <li class="menu_btn important_btn">
                                 <div class="menu_icon">
                                     <img src="icons/important.png" alt="important">
                                 </div>
@@ -116,7 +120,7 @@
                                     important
                                 </div>
                             </li>
-                            <li class="menu_btn">
+                            <li class="menu_btn chat">
                                 <div class="menu_icon">
                                     <img src="icons/chat.png" alt="important">
                                 </div>
@@ -124,7 +128,7 @@
                                     Chats
                                 </div>
                             </li>
-                            <li class="menu_btn">
+                            <li class="menu_btn scheduled">
                                 <div class="menu_icon">
                                     <img src="icons/schedule_send_baseline_nv700_20dp.png" alt="important">
                                 </div>
@@ -132,7 +136,7 @@
                                     Scheduled
                                 </div>
                             </li>
-                            <li class="menu_btn">
+                            <li class="menu_btn all">
                                 <div class="menu_icon">
                                     <img src="icons/stacked_email_baseline_nv700_20dp.png" alt="important">
                                 </div>
@@ -140,7 +144,7 @@
                                     All Mail
                                 </div>
                             </li>
-                            <li class="menu_btn">
+                            <li class="menu_btn spam_btn">
                                 <div class="menu_icon">
                                     <img src="icons/report_baseline_nv700_20dp.png" alt="important">
                                 </div>
@@ -148,7 +152,7 @@
                                     Spam
                                 </div>
                             </li>
-                            <li class="menu_btn">
+                            <li class="menu_btn trash_btn">
                                 <div class="menu_icon">
                                     <img src="icons/delete_baseline_nv700_20dp.png" alt="important">
                                 </div>
@@ -229,16 +233,91 @@
                                 <input type="checkbox" name="select" id="select">
                                 <i class="fas fa-caret-down"></i>
                             </div>
-                            <div class="options"></div>
+                            <div class="options">
+                                <ul class="option_list">
+                                    <li class="list">
+                                        <div class="text">
+                                            all
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="text">
+                                            none
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="text">
+                                            read
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="text">
+                                            unread
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="text">
+                                            stared
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="text">
+                                            unstared
+                                        </div>
+                                    </li>
+                                </ul>                            
+                            </div>
                         </div>
+                            <div class="check_options">
+                                <ul class="option_check">
+                                    <li class="option archive hover">
+                                        <i class="fas fa-archive"></i>
+                                        <i class="fas fa-long-arrow-alt-down"></i>
+                                        <span class="span_text">Archive</span>
+                                    </li>
+                                    <li class="option spam hover">
+                                       <img src="icons/report_baseline_nv700_20dp.png" alt="Spam">
+                                       <span class="span_text">Report Spam</span>
+                                    </li>
+                                    <li class="option hover delete">
+                                        <img src="icons/delete_baseline_nv700_20dp.png" alt="delete">
+                                        <span class="span_text">Delete</span>
+                                    </li>
+                                    <div class="line"></div>
+                                    <li class="option hover read">
+                                        <i class="far fa-envelope-open"></i>
+                                        <span class="span_text">Mark as Read</span>
+                                    </li>
+                                    <li class="option hover time">
+                                        <i class="far fa-clock"></i>
+                                        <span class="span_text">Snoozed</span>
+                                    </li>
+                                    <li class="option hover addTask">
+                                        <i class="far fa-check-circle"></i>
+                                        <i class="fas fa-plus"></i>
+                                        <span class="span_text">Add to task</span>
+                                    </li>
+                                    <div class="line"></div>
+                                    <li class="option hover drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        <span class="span_text">Move to</span>
+                                    </li>
+                                    <li class="option hover important">
+                                        <img src="icons/label_baseline_nv700_20dp.png" alt="label">
+                                        <span class="span_text">Labels</span>
+                                    </li>
+                                </ul>
+                            </div>
                         <div class="head_icon reload">
-                           <div class="reload_icon">
+                           <div class="reload_icon hover">
                                 <i class="fas fa-redo-alt"></i>
+                                <span class="span_text">Reload</span>
                            </div>
                         </div>
-                        <div class="head_icon dot-3">
+                        <div class="head_icon hover dot-3">
                            <div class="dot_icon">
                                 <i class="fas fa-ellipsis-v"></i>
+                                <span class="span_text">More</span>
                            </div>
                         </div>
                     </div>
@@ -264,9 +343,308 @@
                          </div>
                     </div>
                 </header>
+                <div class=" inbox index" index="0">
+                    <div class="category_box">
+                        <ul class="category_menu">
+                            <li class="menu_btn active">
+                                <div class="menu_icon">
+                                    <img src="icons/primary_normal.png" alt="primary" class="normal">
+                                    <img src="icons/primary_active.png" alt="primary" class="active">
+                                </div>
+                                <div class="menu_text">
+                                    primary
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/promotion_normal.png" alt="promotion" class="normal">
+                                    <img src="icons/promotion_active.png" alt="promotion" class="active">
+                                </div>
+                                <div class="menu_text">
+                                    promotions
+                                </div>
+                            </li>
+                            <li class="menu_btn">
+                                <div class="menu_icon">
+                                    <img src="icons/social.png" alt="primary" class="normal">
+                                    <img src="icons/social_active.png" alt="ac" class="active">
+                                </div>
+                                <div class="menu_text">
+                                    Social
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mail_container">
+                        <ul class="all_mails">
+                            <!-- <li class="mail stared">
+                                <div class="mail_left">
+                                    <div class="check_box">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                    </div>
+                                    <div class="star">
+                                        <img src="icons/star_normal.png" alt="star" class="normal">
+                                        <img src="icons/star_active.png" alt="star" class="active">
+                                    </div>
+                                    <div class="mail_title">
+                                        <p class="mail_text">
+                                            Team Digital Ocean
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mail_middle">
+                                    <p class="middle_text">
+                                        <span class="weight">You build apps, we manage databses</span> <span class="light">- [.] if you are building a modern app or website, you....</span>
+                                    </p>
+                                </div>
+                                <div class="mail_options">
+                                    <ul class="option_check active">
+                                        <li class="option archive hover">
+                                            <i class="fas fa-archive"></i>
+                                            <i class="fas fa-long-arrow-alt-down"></i>
+                                            <span class="span_text">Archive</span>
+                                        </li>
+                                        <li class="option hover delete">
+                                            <img src="icons/delete_baseline_nv700_20dp.png" alt="delete">
+                                            <span class="span_text">Delete</span>
+                                        </li>
+                                        <li class="option hover read">
+                                            <i class="far fa-envelope-open"></i>
+                                            <span class="span_text">Mark as Read</span>
+                                        </li>
+                                        <li class="option hover time">
+                                            <i class="far fa-clock"></i>
+                                            <span class="span_text">Snoozed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mail_time">
+                                    12:06
+                                </div>
+                            </li>
+                            <li class="mail">
+                                <div class="mail_left">
+                                    <div class="check_box">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                    </div>
+                                    <div class="star">
+                                        <img src="icons/star_normal.png" alt="star" class="normal">
+                                        <img src="icons/star_active.png" alt="star" class="active">
+                                    </div>
+                                    <div class="mail_title">
+                                        <p class="mail_text">
+                                           SVGator
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mail_middle">
+                                    <p class="middle_text">
+                                        <span class="weight">Enhance UX with SVG animations</span> <span class="light">- Bring your projects to a new level Attract and captivate...</span>
+                                    </p>
+                                </div>
+                                <div class="mail_options">
+                                    <ul class="option_check active">
+                                        <li class="option archive hover">
+                                            <i class="fas fa-archive"></i>
+                                            <i class="fas fa-long-arrow-alt-down"></i>
+                                            <span class="span_text">Archive</span>
+                                        </li>
+                                        <li class="option hover delete">
+                                            <img src="icons/delete_baseline_nv700_20dp.png" alt="delete">
+                                            <span class="span_text">Delete</span>
+                                        </li>
+                                        <li class="option hover read">
+                                            <i class="far fa-envelope-open"></i>
+                                            <span class="span_text">Mark as Read</span>
+                                        </li>
+                                        <li class="option hover time">
+                                            <i class="far fa-clock"></i>
+                                            <span class="span_text">Snoozed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mail_time">
+                                    12:06
+                                </div>
+                            </li>
+                            <li class="mail stared read">
+                                <div class="mail_left">
+                                    <div class="check_box">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                    </div>
+                                    <div class="star">
+                                        <img src="icons/star_normal.png" alt="star" class="normal">
+                                        <img src="icons/star_active.png" alt="star" class="active">
+                                    </div>
+                                    <div class="mail_title">
+                                        <p class="mail_text">
+                                           NewTech Magazine
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mail_middle">
+                                    <p class="middle_text">
+                                        <span class="weight">Stay ahead with the latest tech trends</span> <span class="light">- Dive into the world of technology with our insightful articles...</span>
+                                    </p>
+                                </div>
+                                <div class="mail_options">
+                                    <ul class="option_check active">
+                                        <li class="option archive hover">
+                                            <i class="fas fa-archive"></i>
+                                            <i class="fas fa-long-arrow-alt-down"></i>
+                                            <span class="span_text">Archive</span>
+                                        </li>
+                                        <li class="option hover delete">
+                                            <img src="icons/delete_baseline_nv700_20dp.png" alt="delete">
+                                            <span class="span_text">Delete</span>
+                                        </li>
+                                        <li class="option hover read">
+                                            <i class="far fa-envelope-open"></i>
+                                            <span class="span_text">Mark as Read</span>
+                                        </li>
+                                        <li class="option hover time">
+                                            <i class="far fa-clock"></i>
+                                            <span class="span_text">Snoozed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mail_time">
+                                    10:32
+                                </div>
+                            </li>
+                            <li class="mail read">
+                                <div class="mail_left">
+                                    <div class="check_box">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                    </div>
+                                    <div class="star">
+                                        <img src="icons/star_normal.png" alt="star" class="normal">
+                                        <img src="icons/star_active.png" alt="star" class="active">
+                                    </div>
+                                    <div class="mail_title">
+                                        <p class="mail_text">
+                                           TechTonic Weekly
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mail_middle">
+                                    <p class="middle_text">
+                                        <span class="weight">Unlock the power of technology</span> <span class="light">- Discover the latest innovations and trends in the tech industry...</span>
+                                    </p>
+                                </div>
+                                <div class="mail_options">
+                                    <ul class="option_check active">
+                                        <li class="option archive hover">
+                                            <i class="fas fa-archive"></i>
+                                            <i class="fas fa-long-arrow-alt-down"></i>
+                                            <span class="span_text">Archive</span>
+                                        </li>
+                                        <li class="option hover delete">
+                                            <img src="icons/delete_baseline_nv700_20dp.png" alt="delete">
+                                            <span class="span_text">Delete</span>
+                                        </li>
+                                        <li class="option hover read">
+                                            <i class="far fa-envelope-open"></i>
+                                            <span class="span_text">Mark as Read</span>
+                                        </li>
+                                        <li class="option hover time">
+                                            <i class="far fa-clock"></i>
+                                            <span class="span_text">Snoozed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mail_time">
+                                    09:15
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="snoozed_container index" index="1">
+                    <p class="value">No Snoozed mails yet</p>
+                </div>
+                <footer class="footer">
+                    <ul class="footer_elements">
+                        <li>
+                            <div class="prgress_bar">
+                                <div class="progress_value"></div>
+                            </div>
+                            <p class="value">1.8 GB of 15 GB used</p>    
+                        </li>  
+                        <li>
+                            <p class="value">Terms.Privacy.Program Policies</p>    
+                        </li> 
+                        <li>
+                            <p class="value">TLast account activity: 1 hour ago</p>    
+                        </li>   
+                    </ul>
+                </footer>
             </section>
+            <div class="compose_message">
+                <div class="compose_header">
+                    <div class="title">New Message</div>
+                    <div class="options">
+                        <div class="minimize">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="maximize">
+                            <img src="icons/max_screen.png" alt="max_screen" class="active">
+                            <img src="icons/reduce screen.png" alt="max_screen" class="normal">
+                        </div>
+                        <div class="close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="compose_recipient">
+                    <span class="to">To</span><input type="text" name="recipient" id="recipient" placeholder="Recipient">
+                </div>
+                <div class="compose_subject">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div class="textarea">
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="compose_footer">
+                    <div class="buttons">
+                        <button class="send_button">
+                            Send
+                        </button>
+                        <div class="option"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="other_options">
+                        <div class="a"><img src="icons/a.png" alt="">
+                        </div>
+                        <div class="attach_file">
+                            <i class="fas fa-paperclip"></i>
+                        </div>
+                        <div class="link">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="emoji">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div class="image">
+                            <i class="far fa-image"></i>
+                        </div>
+                        <div class="lock">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="lock">
+                            <i class="fas fa-pen-alt"></i>
+                        </div>
+                        <div class="dot-3">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                        <div class="delete">
+                            <img src="icons/delete_baseline_nv700_20dp.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script src="script.js"></script>
+    <script src="mail.js"></script>
 </body>
 </html>

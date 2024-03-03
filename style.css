@@ -204,7 +204,7 @@ aside.active .icon_text{
 }
 
 .menu_btn.active .menu_text{
-  color: #010158 !important;
+  color: #010158;
 }
 
 .drop-down{
@@ -286,4 +286,540 @@ aside.active .icon_text{
   overflow: auto;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.message_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left_header, .right_header{
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #686868;
+  font-size: 14px;
+}
+
+input[type="checkbox"]{
+  width:  15px;
+  height: 15px;
+  accent-color: rgb(255, 255, 255);
+}
+
+input[type="checkbox"]:checked{
+  border: 1px solid #3b3b3b;
+  box-shadow: 0px 0px 2px #3b3b3b;
+}
+
+.check{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.check_box{
+  position: relative;
+  padding: 5px;
+}
+
+.options{
+  position: relative;
+}
+
+.option_list{
+  display: none;
+}
+
+.option_list.active{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  padding: 10px 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px #5c5c5cab;
+  width: 150px;
+  min-height: 150px;
+  left: 20px;
+  border-radius: 3px;
+  z-index: 4;
+}
+
+.list{
+  padding: 7px ;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.option{
+  cursor: pointer;
+}
+
+.list:hover{
+  background: #dfdfdf;
+}
+
+.text{
+  width: 70px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+
+i.fas{
+  cursor: pointer;
+}
+
+.option_check{
+  display: none;
+}
+
+.option_check.active{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.option{
+  position: relative;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas.fa-long-arrow-alt-down{
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+}
+
+.fas.fa-box{
+  position: absolute;
+}
+
+.fas.fa-plus{
+  position: absolute;
+  font-size: 10px;
+  bottom: 0px;
+  background: #fff;
+  right: 0;
+  border-radius: 50%;
+}
+
+.option{
+  font-size: 16px;
+}
+
+.line{
+  width: 1px ;
+  height: 17px;
+  background: #c4c4c4;
+}
+
+.span_text{
+  padding: 5px 7px;
+  background: #3b3b3b;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 25px;
+  text-wrap: nowrap;
+  font-size: 13px;
+  display: none;
+}
+
+.reload_icon, .dot_icon, .option{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hover:hover .span_text{
+  display: block;
+}
+
+.category_menu .menu_text{
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.category_menu .menu_btn{
+  border-radius: 0;
+  width: 180px;
+  padding: 20px 15px;
+  border-bottom: 3px solid transparent;
+}
+
+
+.category_menu .menu_btn:hover, .category_menu .menu_btn.active:hover{
+  background: #eeeeee;
+}
+
+.category_menu .menu_btn.active{
+  background: transparent;
+  border-bottom: 3px solid blue;
+}
+
+.category_menu .menu_btn.active .menu_text{
+  color: blue !important;
+  text-transform: capitalize;
+}
+
+.category_menu{
+  display: flex;
+  margin-top: 10px;
+}
+
+.category_menu .menu_btn.active img.active{
+  display: inline-block;
+}
+
+
+.category_menu .menu_btn img.active{
+  display: none;
+}
+
+.category_menu .menu_btn img.normal{
+  display: inline-block;
+}
+
+
+.category_menu .menu_btn.active img.normal{
+  display: none;
+}
+
+/* mail container css */
+
+.mail_container{
+  margin-top: 10px;
+}
+
+.mail{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-bottom: 2px solid #e2e2e2;
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+.mail_left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+
+}
+
+.mail.stared .normal{
+  display: none;
+}
+
+.mail.stared .active{
+  display: inline-block;
+}
+
+.mail .active{
+  color: #ffbb00;
+  display: none;
+}
+
+.mail_middle{
+  width: 63%;
+}
+
+.middle_text, .mail_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mail_time{
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  z-index: 1;
+}
+
+.mail_options .option_check.active{
+  display: flex;
+  color: #3b3b3b;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  z-index: 2;
+  display: none;
+}
+
+.mail .mail_middle .weight, .mail_title{
+  font-weight: bold;
+  color: #252525;
+}
+
+.mail .mail_middle .light{
+  color: #0e0e0e;
+  font-weight: 400;
+}
+
+.mail.read{
+  font-weight: 100;
+  color: #3b3b3b;
+}
+
+.mail.read  .mail_middle .weight{
+  font-weight: 550;
+  color: #8d8d8d;
+}
+
+.mail.read  .mail_title{
+  color: #8d8d8d;
+}
+
+.mail:hover .mail_options .option_check.active{
+  display: flex;
+}
+
+.mail:hover{
+  box-shadow: 2px 2px 10px #3b3b3b;
+  cursor: pointer;
+}
+
+.mail:hover .mail_time{
+  display: none;
+}
+
+.mail.selected{
+  background: #c8eeff;
+}
+
+.hover.icon{
+  position: relative;
+  overflow: visible;
+}
+
+.hover.icon .span_text{
+  margin-top: 23px;
+  z-index: 10;
+}
+
+.footer{
+  margin-top: 15px;
+}
+
+.footer_elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3b3b3b;
+  font-family: sans-serif;
+  font-size: small;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+}
+
+.value{
+  margin: 5px;
+}
+
+.prgress_bar{
+  margin: 5px;
+  width: 200px;
+  height: 7px;
+  border-radius: 50px;
+  background: #ddd;
+  overflow: hidden;
+}
+
+.progress_value{
+  width: 40px;
+  height: 100%;
+  background: #525252;
+  border-radius: 20px;
+}
+
+.index{
+  min-height: 50vh;
+}
+
+.inbox{
+  display: none;
+}
+
+.snoozed_container{
+  display: block;
+}
+
+.snoozed_container .value, .value{
+  margin: 20px;
+  color: #3b3b3b;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.mail.draft .mail_text{
+  color: red;
+  font-weight: 100;
+}
+
+.compose_message{
+  display: none;
+}
+
+.compose_message.active{
+  display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  background: #fff;
+  width: 400px;
+  box-shadow: 0px 0px 7px;
+  z-index: 10;
+}
+
+.compose_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+  background: #ededff;
+  color: #010158;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3b3b3b;
+}
+
+.compose_message.fullscreen .normal{
+  display: inline-block;
+}
+
+.compose_message.fullscreen .active{
+  display: none;
+}
+
+.compose_message .active{
+  display: inline-block;
+}
+
+.compose_message .normal{
+  display: none;
+}
+
+.compose_message.fullscreen{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: calc(100% - 300px);
+  max-width: calc(100% - 10px);
+  min-width: 200px;
+  height: 400px;
+}
+
+.compose_message.minimized
+{
+  height: 40px;
+  overflow: hidden;
+  width: 400px;
+}
+.compose_recipient{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.compose_recipient input, .compose_subject input{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #c2c2c2;
+  outline: none;
+}
+
+.to{
+  display: none;
+}
+
+.textarea{
+  padding: 5px;
+}
+
+textarea{
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #686868;
+  height: 300px;
+}
+
+.compose_footer{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.other_options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  margin-left: 25px;
+}
+
+.send_button{
+  margin-left: 5px;
+  padding: 10px 15px;
+  width: 75px;
+  border-radius: 50px;
+  border: none;
+  background: blue;
+  color: #fff;
+}
+
+.buttons .option{
+  position: absolute;
+  right: -15px;
+  width: 30px;
+  height: 35px;
+  background: blue;
+  border-radius: 0px 50px 50px 0;
+  border-left: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+@media screen and (max-width:730px) {
+  .mail{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mail_middle{
+    width: 100%;
+  }
 }
